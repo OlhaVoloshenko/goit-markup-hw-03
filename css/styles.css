@@ -12,13 +12,23 @@ a {
 text-decoration: none;
 }
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 li {
     display: inline-block;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
 body {
+    font-weight: 1200px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.5;
@@ -28,10 +38,34 @@ body {
 }
 
 /*Header*/
+.container {
+    width: 1200px;
+    outline: 1px solid green;*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-nav {
+    width: 145px;
+    height: 31px;
+    margin-top: 24px;
+    margin-right: 93px;
+}
+.header-li {
+    width: 294px;
+    height: 16px;
+    margin-top: 32px;
+    margin-right: 331px;
+    margin-left: 0;
+    padding-right: 50px;
+}
 .header-logo {
     font-family: Raleway;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 26px;
     line-height: 31px;
 /* identical to box height */
@@ -44,16 +78,20 @@ body {
 .header-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
 .header {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--page-text-color);
+}
+.header-list .header-link:hover,
+.header-list .header-link:focus {
+    color: var(--accent-text-color);
 }
 .header-contacts .mail:hover,
 .header-contacts .mail:focus {
@@ -64,10 +102,6 @@ body {
     color: var(--accent-text-color);
 }
 
-.header-list .header-link:hover,
-.header-list .header-link:focus {
-    color: var(--accent-text-color);
-}
 
 /*підсвічування активної сторінки*/
 .header-list .header-link.current {
@@ -76,14 +110,9 @@ body {
 
 /*main*/
 .main {
-    position: relative;
-    height: 400px;
+    /*position: relative;
+    height: 400px;*/
     background-color: var(--background-color-main);
-}
-.main-title {
-    
-width: 1170px;
-height: 101px;
 }
 .main-title {
     font-weight: 900;
@@ -125,6 +154,36 @@ height: 101px;
     letter-spacing: 0.03em;
     color: var(--page-text-color);
 }
+.container-feature {
+    width: 1170px;
+    height: 101px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+   /* background-color: hotpink;*/
+}
+.feature-list {
+   /* outline: 1px solid green;*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.feature-list > .feature-subtitle {
+   /* outline: 1px solid rebeccapurple;*/
+    flex-basis: calc(100% / 4 - 20px);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
 /*directions*/
 .directions {
     font-weight: bold;
@@ -184,14 +243,14 @@ height: 101px;
 .contacts-logo > span{
     color: var(--accent-text-color);
 }
-.contacts-block {
+.contacts-block .contacts-list {
     display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 /* or 171% */
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;   
 }
 .contacts-mail,
 .contacts-phone {
@@ -218,6 +277,7 @@ height: 101px;
     display: block;
 }
 /*Portfolio CSS*/
+
 .portfolio .portfolio-button {
     font-weight: 500;
     font-size: 16px;
@@ -227,6 +287,8 @@ height: 101px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+/*container*/
+
 .portfolio .container-subtitle {
     font-weight: bold;
     font-size: 18px;
@@ -261,13 +323,6 @@ height: 101px;
 .button.main {
     color: var(--primary-text-color);
     background-color: var(--background-color-portfolio);
-}
-
-.container-subtitle {
-    
-}
-.container-text {
-    color: var(--page-text-color);
 }
 
 .portfolio .portfolio-title,
