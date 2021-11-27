@@ -12,19 +12,19 @@ a {
 text-decoration: none;
 }
 ul {
-    /*margin: 0;
-    padding: 0;*/
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 li {
     display: inline-block;
 }
 
-/*img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-}*/
+}
 
 
 body {
@@ -41,14 +41,28 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #000000;
 }
-.group-1,
-.group-2,
-.group-3,
+
+.container,
+.header-nav,
+.header-list,
+.header-contacts,
 .box {
     display: flex;
     padding: 8px;
 }
+.header-contacts {
+    margin-left: auto;
+}
+/*.box {
+    margin-left: 4px;
+    margin-right: 4px;
+    border-color: #795548;
+    font-weight: 700;
+}*/
 .header-logo {
     font-family: Raleway;
     font-style: normal;
