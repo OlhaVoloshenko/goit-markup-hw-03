@@ -138,9 +138,9 @@ body {
 
 /*main*/
 .main {
-    padding-left: auto;
+    /*padding-left: auto;
     padding-right: auto;
-    width: 1230px;
+    width: 1230px;*/
     padding-top: 200px;
     padding-bottom: 200px;
     margin-bottom: 94px;
