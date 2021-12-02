@@ -253,11 +253,11 @@ margin-left: 50px;
 .directions-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /*display: inline-flex;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;*/
+    /*justify-content: space-between;*/
+}
+.directions-item {
+    display: block;
+    margin-left: 0;
 }
 .directions-picture {
     margin-left: 0;
@@ -265,13 +265,19 @@ margin-left: 50px;
     padding-bottom: 0;
     min-height: 294px;
     min-width: 370px;
-    margin-right: 30px;
-  }
-
-.directions-picture:not(:first-child) {
-        margin-left: 30px;
-    }
+ 
 }
+
+ /* .directions-picture.nogap {
+      display: block;
+  }*/
+
+  .directions-item:not(:first-child) {
+      margin-left: 30px;
+    }
+/*.directions-picture:first-child {
+        margin-left: 0px;
+    }*/
 /*team*/
 .team {
     
