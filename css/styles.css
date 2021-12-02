@@ -69,9 +69,10 @@ body {
 
 .header-logo {
     width: 145px;
-    margin-left: auto;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     font-family: Raleway;
     font-style: normal;
@@ -85,11 +86,14 @@ body {
 .header-logo > span {
     color: var(--accent-text-color);
 }
-
+.header-list {
+    margin-left: 93px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .header-nav,
 .header-list,
-.header-contacts,
-.header-box {
+.header-contacts {
     display: flex;
 }
 
@@ -98,10 +102,6 @@ body {
 }
 
 .header-list .header-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -109,13 +109,10 @@ body {
     color: var(--primary-text-color);
 }
 
-.header-list {
-    margin-left: 93px;
-}
 .header-contacts  {
     margin-left: auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-contacts .header-item + .header-item {
@@ -158,7 +155,6 @@ margin-left: 50px;
 
 /*main*/
 .main {
-   /* width: 1200px;*/
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -203,17 +199,19 @@ margin-left: 50px;
 }*/
 /*feature*/
 .feature {
-    /*width: 1200px;*/
     padding-top: 0;
-    margin-left: auto;
+    padding-bottom: 0;
+    margin: 0 auto;
+   /* margin-left: auto;
     margin-right: auto;
-    /*margin-top: 94px;
+    margin-top: 94px;
     margin-bottom: 94px;*/
 }
 
 .feature-list .feature-item + .feature-item {
     margin-left: 30px;
-    }
+}
+
 .feature-list {
     display: flex;
     justify-content: center;
@@ -223,6 +221,8 @@ margin-left: 50px;
     width: 270px;
 }
 .featute-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -231,6 +231,8 @@ margin-left: 50px;
 
 }
 .feature-text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -246,9 +248,9 @@ margin-left: 50px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
-.directions .container {
+.directions .section-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 }
 .directions-list {
     display: flex;
