@@ -290,7 +290,6 @@ margin-left: 50px;
     padding-top: 0;
     margin-bottom: 0;
     margin-top: 0;
-    /*margin-bottom: 94px;*/
 }
 .team .section-title {
     margin-top: 0;
@@ -353,6 +352,11 @@ margin-left: 50px;
     display: block;
 }*/
 .contacts-logo {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 60px;
+
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -361,6 +365,8 @@ margin-left: 50px;
 /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--background-color);
+
+    
 }
 .contacts-logo > span{
     color: var(--accent-text-color);
@@ -372,6 +378,20 @@ margin-left: 50px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;   
+}
+
+.contacts-menu {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+.contacts-list>.contacts-item {
+    padding: 0 auto;
+    margin: 0 auto;
+   /* margin-bottom: 9px;*/
+}
+
+.contacts-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 .contacts-mail,
 .contacts-phone {
