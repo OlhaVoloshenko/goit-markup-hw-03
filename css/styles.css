@@ -6,6 +6,7 @@
     --background-color: #FFFFFF;
     --background-color-portfolio: #F5F4FA;
     --background-color-main: #2F303A;
+    --border-portfolio-cards: #EEEEEE;
 }
 /*html {
     box-sizing: border-box;
@@ -493,13 +494,17 @@ margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
   }
+.portfolio-item {
+    border-radius: 4px transparent;
+}
 .container-item {
     width: calc((100% - 60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border-radius: 4px transparent;
+    border-bottom: 1px solid var(--border-portfolio-cards);
     /*  width: 370px;*/
 }
+
 
 /**.container-item:not(:nth-child(3n)){
     margin-right: 30px;
