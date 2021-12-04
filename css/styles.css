@@ -159,9 +159,6 @@ margin-left: 50px;
 /*main*/
 .main {
     padding: 0;
-    margin-bottom: 94px;
-    
-   /* padding-bottom: 200px;*/
     background-color: var(--background-color-main);
 }
 .main-menu {
@@ -201,18 +198,15 @@ margin-left: 50px;
 }*/
 /*feature*/
 .feature {
-    padding-top: 0;
 }
 
 .feature-list .feature-item + .feature-item {
     margin-left: 30px;
 }
-
 .feature-list {
     display: flex;
     justify-content: center;
 }
-
 .feature-list .feature-item {
     width: calc((100% - 90px) / 4);
     /*min-width: 270px;*/
